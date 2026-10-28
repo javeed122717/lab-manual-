@@ -27,8 +27,16 @@ public:
         }
 };  
 int main() 
-{     
+{ 
+    int roll2;
+    string name2;
     Student s1(101, "Arun");     
-    s1.display();     
+    s1.display();
+    cout << "Enter name\n" << endl;
+    cin >> name2;
+    cout << "Enter rollNo\n" << endl;
+    cin >> roll2;
+    Student s2(roll2,name2);
+    s2.display()
     return 0; 
 } 
